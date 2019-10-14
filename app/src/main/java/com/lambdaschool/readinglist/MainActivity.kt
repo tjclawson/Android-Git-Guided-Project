@@ -17,10 +17,6 @@ class MainActivity : AppCompatActivity() {
         context = this
 
         preferences = getSharedPreferences(Constants.BOOK_PREFERENCES, Context.MODE_PRIVATE)
-        /* SharedPreferences.Editor editor = preferences.edit();
-        editor.clear();
-        editor.commit(); */
-
 
         add_book_button.setOnClickListener {
             val intent = Intent(context, EditBookActivity::class.java)
